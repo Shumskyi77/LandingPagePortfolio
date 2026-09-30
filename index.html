@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oak Corner Workshop — Solid Wood Furniture, Warsaw</title>
+  <meta name="description" content="Custom tables, kitchens and wardrobes from solid oak and ash. Small workshop at ul. Drewniana 14, Warsaw. From sketch to installation. 5-year warranty." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=Caveat:wght@600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bark: '#241A12',
+            wood: '#5C3D2E',
+            woodlight: '#8A6A4F',
+            cream: '#F6EFE3',
+            paper: '#FFFDF6',
+            moss: '#33402F',
+            line: '#D9C7A8',
+            inksoft: '#5a4a3a',
+          },
+          fontFamily: {
+            display: ['Bitter', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            hand: ['Caveat', 'cursive'],
+            mono: ['"IBM Plex Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-bark font-sans antialiased">
+
+  <!-- micro top bar -->
+  <div class="border-b border-line bg-cream">
+    <div class="max-w-6xl mx-auto px-5 py-2 flex items-center justify-between gap-4 font-mono text-[12px] tracking-wide text-inksoft">
+      <span>UL. DREWNIANA 14, WARSAW &nbsp;·&nbsp; MON–SAT 9–19</span>
+      <span class="hidden sm:inline">EST. 2011 — SMALL TEAM OF FOUR</span>
+      <a href="tel:+48600000000" class="underline underline-offset-4 decoration-woodlight">+48 600 000 000</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="siteHeader" class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b-[1.5px] border-bark">
+    <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="35" height="35" rx="6" stroke="#241A12" stroke-width="2.5"/>
+          <path d="M10 24 L18 10 L22 10 L14 24 Z" fill="#241A12"/>
+          <path d="M19 24 L27 10 L28.5 13 L21.5 24 Z" fill="#8A6A4F"/>
+          <rect x="8" y="25.5" width="22" height="3" fill="#33402F"/>
+        </svg>
+        <span class="leading-tight">
+          <span class="block font-display font-bold text-[19px]">Oak Corner Workshop</span>
+          <span class="block text-[13px] text-inksoft">Solid wood. Handmade. No middlemen.</span>
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-[15px]">
+        <a href="#process" class="navlink">Process</a>
+        <a href="#works" class="navlink">Work</a>
+        <a href="#why" class="navlink">Workshop</a>
+        <a href="#reviews" class="navlink">Notes</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#quote" class="btn-solid hidden sm:inline-flex">Calculate cost</a>
+        <button id="menuBtn" class="md:hidden min-w-[48px] min-h-[48px] grid place-items-center border-[1.5px] border-bark rounded-lg bg-paper" aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-paper px-5 py-3">
+      <a href="#process" class="block py-3 border-b border-line">Process</a>
+      <a href="#works" class="block py-3 border-b border-line">Work</a>
+      <a href="#why" class="block py-3 border-b border-line">Workshop</a>
+      <a href="#reviews" class="block py-3">Notes</a>
+      <a href="#quote" class="btn-solid mt-3 mb-2 w-full justify-center">Calculate cost</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="max-w-6xl mx-auto px-5 pt-10 md:pt-14 pb-12 md:pb-16">
+      <div class="grid lg:grid-cols-[1.05fr_.95fr] gap-10 lg:gap-14 items-start">
+        <div class="pt-2 reveal">
+          <p class="kicker"><span class="kicker-rule"></span>Custom furniture — Warsaw &amp; region</p>
+          <h1 class="font-display font-bold text-[42px] md:text-[62px] leading-[1.02] mt-4">
+            Furniture that<br />will stand <em class="font-medium">50&nbsp;years.</em>
+          </h1>
+          <p class="text-[17px] md:text-lg text-wood mt-5 max-w-[46ch] leading-relaxed">
+            We’re Stas, Jurek and two Mareks. We make tables, kitchens and wardrobes
+            from solid oak and ash in our own shop on Drewniana street —
+            from the first sketch to the last screw in your wall.
+          </p>
+          <div class="ledger-row mt-7">
+            <div><span>Wood</span><strong>oak · ash · walnut</strong></div>
+            <div><span>Lead time</span><strong>4–8 weeks</strong></div>
+            <div><span>Warranty</span><strong>5 years</strong></div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 mt-7">
+            <a href="#quote" class="btn-solid btn-big justify-center">Get an estimate</a>
+            <a href="#works" class="btn-line btn-big justify-center">See our work
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M3 8l5 5 5-5"/></svg>
+            </a>
+          </div>
+          <div class="flex items-center gap-2 mt-4">
+            <svg class="sketch-arrow shrink-0" width="54" height="30" viewBox="0 0 54 30" fill="none" stroke="#8A6A4F" stroke-width="2" stroke-linecap="round">
+              <path d="M4 4 C 20 4, 34 8, 44 22 M44 22 l-7 -2 M44 22 l1 -7"/>
+            </svg>
+            <p class="font-hand text-[22px] text-woodlight leading-none pt-1">start here — takes 1 min, really</p>
+          </div>
+          <p class="text-[13.5px] text-inksoft mt-5 max-w-[46ch]">
+            If we don’t pick up — we’re in sawdust. Leave a message,
+            we call back in the evening. Ask for Stas.
+          </p>
+        </div>
+
+        <div class="relative mt-2 lg:mt-0" id="heroPhotos">
+          <div id="heroTilt" class="relative">
+          <figure class="print-photo rotate-[1.2deg]">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1400&auto=format&fit=crop"
+              alt="Oak dining table with chairs in a bright room" loading="eager" />
+            <figcaption>
+              <span class="font-hand text-[22px] leading-none">family table, 200 × 95 — oak, oil</span>
+              <span class="font-mono text-[11.5px] text-inksoft tracking-wide">NO.14 · PRAGA · 6 WEEKS</span>
+            </figcaption>
+          </figure>
+          <figure class="print-photo-small rotate-[-2.5deg]">
+            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=700&auto=format&fit=crop"
+              alt="Hands planing wood on a workbench" loading="lazy" />
+            <figcaption class="font-mono text-[11px]">OUR BENCH, TUESDAY</figcaption>
+          </figure>
+          <div class="stamp" id="heroStamp">MADE HERE —<br />DREWNIANA 14</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="max-w-6xl mx-auto px-5 py-16 md:py-20 scroll-mt-24">
+      <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-10">
+        <div class="reveal">
+          <p class="kicker"><span class="kicker-rule"></span>How it usually goes</p>
+          <h2 class="h2">Four steps,<br />no surprises.</h2>
+          <p class="text-wood mt-4 max-w-[42ch] leading-relaxed">
+            You talk to the person who will actually saw your boards.
+            Payment is simple: 30% to start, the rest when it stands in your room.
+          </p>
+          <p class="font-hand text-[24px] text-woodlight mt-5">Jurek draws. Stas calls back. Marek delivers.</p>
+          <p class="font-mono text-[11.5px] text-inksoft mt-3 tracking-wide">LAST UPDATED TUESDAY, AFTER OILING — STAS</p>
+        </div>
+        <ol class="ledger-list">
+          <li class="reveal" style="--d:.05s">
+            <span class="num">01</span>
+            <div><h3>Measurements</h3>
+              <p>Come by the shop, or send sizes plus two photos of the room on messenger. A crooked wall? Tell us — we’ve seen worse.</p>
+              <span class="meta">1–2 days · free</span></div>
+          </li>
+          <li class="reveal" style="--d:.12s">
+            <span class="num">02</span>
+            <div><h3>Sketch + honest price</h3>
+              <p>A simple 3D sketch and a fixed number. Wood, work, delivery — listed line by line. If it’s over budget, we say what to simplify.</p>
+              <span class="meta">2–3 days · free</span></div>
+          </li>
+          <li class="reveal" style="--d:.19s">
+            <span class="num">03</span>
+            <div><h3>Building</h3>
+              <p>4–8 weeks at the bench. We send one photo mid-way — when it still looks like boards. Oil finish, two coats, no gloss plastic.</p>
+              <span class="meta">photo update halfway</span></div>
+          </li>
+          <li class="reveal" style="--d:.26s">
+            <span class="num">04</span>
+            <div><h3>Delivery + assembly</h3>
+              <p>We bring it in our own van and assemble it ourselves. Warsaw and around — Pruszków, Legionowo, Otwock and further by agreement.</p>
+              <span class="meta">we take the sawdust with us</span></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="bg-paper border-y-[1.5px] border-bark scroll-mt-24">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="flex flex-wrap items-end justify-between gap-6 reveal">
+          <div>
+            <p class="kicker"><span class="kicker-rule"></span>Workshop log, 2023–2026</p>
+            <h2 class="h2">Recent pieces.</h2>
+          </div>
+          <p class="text-[14px] text-inksoft max-w-[38ch] leading-relaxed">
+            Stock photos for now — swap them for your own, the numbers and
+            captions can stay as they are. Every piece below is the same formula:
+            what / wood / time / district.
+          </p>
+        </div>
+
+        <div class="works-grid mt-10">
+          <figure class="print-photo reveal-photo" style="--r:-.4deg;--d:.02s">
+            <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=900&auto=format&fit=crop" alt="Oak dining table" loading="lazy" />
+            <figcaption><span class="font-display font-semibold text-[16px]">No.14 — Dining table, 200 × 95</span><span class="font-mono text-[12px] text-inksoft">OAK · OIL · 6 WEEKS · PRAGA</span></figcaption>
+          </figure>
+          <figure class="print-photo tall reveal-photo" style="--r:.6deg;--d:.08s">
+            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=900&auto=format&fit=crop" alt="Kitchen with wooden fronts" loading="lazy" />
+            <figcaption><span class="font-display font-semibold text-[16px]">No.22 — Kitchen, 3.2 m</span><span class="font-mono text-[12px] text-inksoft">ASH + OAK · 8 WEEKS · MOKOTÓW</span></figcaption>
+          </figure>
+          <figure class="print-photo reveal-photo" style="--r:.3deg;--d:.14s">
+            <img src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?q=80&w=900&auto=format&fit=crop" alt="Wooden chairs around a table" loading="lazy" />
+            <figcaption><span class="font-display font-semibold text-[16px]">No.18 — Six chairs</span><span class="font-mono text-[12px] text-inksoft">ASH · 4 WEEKS · URSUS</span></figcaption>
+          </figure>
+          <figure class="print-photo reveal-photo" style="--r:-.5deg;--d:.05s">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900&auto=format&fit=crop" alt="Big wooden family table" loading="lazy" />
+            <figcaption><span class="font-display font-semibold text-[16px]">No.25 — Family table, 240 × 100</span><span class="font-mono text-[12px] text-inksoft">WALNUT · 7 WEEKS · WILANÓW</span></figcaption>
+          </figure>
+          <figure class="print-photo tall reveal-photo" style="--r:.4deg;--d:.11s">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=900&auto=format&fit=crop" alt="Wooden wardrobe in a bedroom" loading="lazy" />
+            <figcaption><span class="font-display font-semibold text-[16px]">No.19 — Wardrobe, 180 cm</span><span class="font-mono text-[12px] text-inksoft">OAK · 5 WEEKS · BIELANY</span></figcaption>
+          </figure>
+          <figure class="print-photo reveal-photo" style="--r:-.3deg;--d:.17s">
+            <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=900&auto=format&fit=crop" alt="Small oak work desk" loading="lazy" />
+            <figcaption><span class="font-display font-semibold text-[16px]">No.21 — Desk, 140 × 70</span><span class="font-mono text-[12px] text-inksoft">OAK · 4 WEEKS · PRUSZKÓW</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why" class="max-w-6xl mx-auto px-5 py-16 md:py-20 scroll-mt-24">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div class="reveal">
+          <p class="kicker"><span class="kicker-rule"></span>The workshop</p>
+          <h2 class="h2">We don’t do much.<br />We do it properly.</h2>
+          <div class="mt-8 border-t-[1.5px] border-bark">
+            <div class="why-row">
+              <span class="font-mono text-[13px] text-woodlight">A</span>
+              <div><h3>Only solid wood</h3><p>Oak, ash, walnut from two sawmills we’ve used for years. If a board is bad, it goes to firewood — not into your table.</p></div>
+            </div>
+            <div class="why-row">
+              <span class="font-mono text-[13px] text-woodlight">B</span>
+              <div><h3>One roof, four people</h3><p>Sawing, joinery and oiling all happen at Drewniana 14. The van you see at delivery is ours too. Dog’s name is Puck.</p></div>
+            </div>
+            <div class="why-row">
+              <span class="font-mono text-[13px] text-woodlight">C</span>
+              <div><h3>5 years on the frame</h3><p>A joint cracked or a door dropped? We come back and fix it. We still service a table from 2014 — <span class="font-hand text-[20px]">leg re-glued, free.</span></p></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal" style="--d:.1s">
+          <figure class="print-photo rotate-[-1deg]">
+            <img src="https://images.unsplash.com/photo-1611059947475-1e73b3d0d5b1?q=80&w=1200&auto=format&fit=crop"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1200&auto=format&fit=crop'"
+              alt="Inside the workshop — tools and timber" loading="lazy" />
+            <figcaption><span class="font-mono text-[12px] text-inksoft">DREWNIANA 14 — PLANER, SAW, OAK STACK. SMELLS LIKE IT LOOKS.</span></figcaption>
+          </figure>
+          <div class="dont-box">
+            <p class="font-mono text-[12px] tracking-[0.14em] text-woodlight">WHAT WE WON’T DO</p>
+            <ul>
+              <li>No chipboard or MDF “with wood effect”.</li>
+              <li>No <span class="strike">gloss</span> high-gloss plastic film. Oil or hardwax, that’s it.</li>
+              <li>No “ready in 3 days”. Wood doesn’t hurry.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="border-y-[1.5px] border-bark bg-[#EFE3CE] scroll-mt-24 relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+        <div class="reveal">
+        <p class="kicker"><span class="kicker-rule"></span>Pinned to the workshop door</p>
+        <h2 class="h2">Notes from clients.</h2>
+        <p class="text-[14px] text-inksoft mt-3">Copied word for word. Even the one about felt-tip pens.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+          <blockquote class="note n1 reveal" style="--d:.02s">
+            <span class="pin"></span>
+            <p class="font-mono text-[11px] text-inksoft">MAR 2026 · MAREK, PRAGA</p>
+            <p class="mt-2">Table is heavy, smooth, smells of wood. Assembled in an hour and took the sawdust with them.</p>
+          </blockquote>
+          <blockquote class="note n2 reveal" style="--d:.1s">
+            <span class="pin"></span>
+            <p class="font-mono text-[11px] text-inksoft">NOV 2025 · ANNA &amp; PIOTR, PRUSZKÓW</p>
+            <p class="mt-2">Sent measurements Monday, sketch by Friday. Kitchen ready in two months. Fits to the millimetre.</p>
+          </blockquote>
+          <blockquote class="note n3 reveal" style="--d:.18s">
+            <span class="pin"></span>
+            <p class="font-mono text-[11px] text-inksoft">SEP 2025 · KATARZYNA, MOKOTÓW</p>
+            <p class="mt-2">Chairs don’t creak. Kids climb them daily. Very solid. One already survived felt-tip pens.</p>
+          </blockquote>
+          <blockquote class="note n4 reveal" style="--d:.26s">
+            <span class="pin"></span>
+            <p class="font-mono text-[11px] text-inksoft">JUN 2025 · TOMASZ, URSUS</p>
+            <p class="mt-2">Wardrobe for a crooked wall. They came to measure twice. Now it stands like it was built in.</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section id="quote" class="max-w-6xl mx-auto px-5 py-16 md:py-20 scroll-mt-24">
+      <div class="order-sheet reveal">
+        <div class="order-left relative">
+          <span class="coffee-ring" style="right:24px;top:24px"></span>
+          <p class="font-mono text-[12px] tracking-[0.16em] text-[#E8D9BE]">ORDER SHEET — NO. <span id="orderNo">047</span></p>
+          <h2 class="font-display font-bold text-3xl md:text-[38px] leading-tight mt-3 text-cream">Tell us what<br />you need.</h2>
+          <p class="text-cream/80 mt-4 text-[15px] leading-relaxed max-w-[38ch]">
+            Name, phone, what and roughly what size.
+            We calculate and call back — usually the same evening.
+          </p>
+          <dl class="mt-7 space-y-4 text-[15px]">
+            <div class="flex gap-3"><dt class="font-mono text-[12px] text-[#E8D9BE] w-16 pt-1">VISIT</dt><dd class="text-cream">ul. Drewniana 14, Warsaw<br /><span class="text-cream/60">Mon–Sat, 9:00–19:00. Ring the green gate.<br />Sunday — closed, we’re hunting boards.</span></dd></div>
+            <div class="flex gap-3"><dt class="font-mono text-[12px] text-[#E8D9BE] w-16 pt-1">CALL</dt><dd><a href="tel:+48600000000" class="text-cream underline underline-offset-4">+48 600 000 000</a><span class="text-cream/60"> (example)</span></dd></div>
+          </dl>
+          <p class="font-hand text-[24px] text-[#E8D9BE] mt-7">ask for Stas — he remembers every table</p>
+        </div>
+        <form id="quoteForm" class="order-form" novalidate>
+          <div class="field">
+            <label for="fName">1 &nbsp; Your name</label>
+            <input id="fName" name="name" type="text" placeholder="Jan" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="fPhone">2 &nbsp; Phone</label>
+            <input id="fPhone" name="phone" type="tel" placeholder="+48 ___ ___ ___" autocomplete="tel" required />
+            <p id="phoneError" class="hidden text-[13px] text-red-800 mt-1">That number looks short — check it once more.</p>
+          </div>
+          <div class="field">
+            <label for="fType">3 &nbsp; What is it?</label>
+            <select id="fType" name="type">
+              <option>Table</option>
+              <option>Kitchen</option>
+              <option>Wardrobe</option>
+              <option>Chairs</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="fSize">4 &nbsp; Rough size</label>
+            <input id="fSize" name="size" type="text" placeholder="e.g. table 200 × 90, kitchen 3 m" />
+          </div>
+          <button type="submit" class="btn-solid btn-big w-full justify-center mt-2">Send request</button>
+          <p class="text-[13px] text-inksoft text-center mt-1">We reply within a day. No managers, no scripts.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t-[1.5px] border-bark bg-paper">
+    <div class="max-w-6xl mx-auto px-5 py-7 flex flex-col md:flex-row gap-2 items-start md:items-center justify-between text-[13.5px] text-inksoft">
+      <p><strong class="font-display text-bark">Oak Corner Workshop</strong> · ul. Drewniana 14, Warsaw · <a href="tel:+48600000000" class="underline">+48 600 000 000</a> (example) <span class="font-hand text-[19px] text-woodlight ml-1">— Stas</span></p>
+      <p class="font-mono text-[12px]">© <span id="year"></span> · SOLID WOOD, HONEST WORK</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="hidden fixed inset-0 z-[60] items-center justify-center p-5">
+    <div id="modalBackdrop" class="absolute inset-0 bg-bark/70"></div>
+    <div class="pop relative bg-paper border-[1.5px] border-bark rounded-xl max-w-md w-full p-8 shadow-hard">
+      <p class="font-mono text-[12px] tracking-[0.14em] text-woodlight">ORDER SHEET — RECEIVED</p>
+      <h3 class="font-display font-bold text-[26px] mt-2">Thanks, <span id="modalName">friend</span>.</h3>
+      <p class="text-wood mt-3 text-[15px] leading-relaxed">It’s on our bench now.<br /><strong class="text-bark">In the real site this form is sent to your personal Telegram or Discord bot!</strong></p>
+      <p class="text-[13px] text-inksoft mt-2">Demo version — nothing was sent anywhere.</p>
+      <button id="modalClose" class="btn-solid w-full justify-center mt-6">Got it</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
